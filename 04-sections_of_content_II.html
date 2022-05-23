@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section of content II (article->section)</title>
+</head>
+
+<body>
+    <!-- 
+        section: es un contenedor generico que agrupa contenido quee esta relacionado
+                 Cuando creamos bloques cuyo contenido es parte de un bloque total 
+                 usaremos section.
+                 https://developer.mozilla.org/es/docs/Web/HTML/Element/section
+        article: es un contenedor que representa contenido independiente, es decir,
+                 podemos leer este fragmento en cualquier otro sitio y tendria sentido 
+                 por si mismo.
+                 https://developer.mozilla.org/es/docs/Web/HTML/Element/article
+        aside: se utiliza para representar contenido relacionado pero que no forma parte
+               del contenido principal.
+               https://developer.mozilla.org/es/docs/Web/HTML/Element/aside        
+        Anidamiento: un section puede contener articles, por ejemplo, si tenemos,
+                     varios articulos que hablan sobre etiquetas de HTML deben ir dentro 
+                     de un section ya que es contenido relacionado entre si, y los article 
+                     serian contenido independiente porque podriamos leer uno sin haber 
+                     leido el resto y seguiria teniendo sentido.
+                     El article es definido como un componete de la pagina de contenido 
+                     independiente, esto implica que esta etiqueta pueda tener un header 
+                     y un footer propios
+                     Tambien existe el caso en el que un article contenga varias secciones 
+                     el articulo independientes podria ser navegadores y este contener dentro 
+                     secciones como navegadores mas utilizados en 2020
+     -->
+    <header>
+        <h1>Noticias NACIONALES</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Section como contenedor</h2>
+            <section>
+                <h3>Noticias del dia</h3>
+                <article>
+                    <header>
+                        <h4>Noticia 1</h4>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facilis quaerat quas aut dignissimos quo natus incidunt veniam autem reiciendis deserunt, repellat, quidem provident iusto. Dolor facere cupiditate nemo commodi!</p>
+                    <footer>
+                        La noticia 1 ocurrio en Madrid
+                    </footer>
+
+                </article>
+                <article>
+                    <h4>Noticia 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repudiandae ad sequi saepe, dolorum cupiditate cum et nisi, eaque fugiat voluptatum voluptas hic, debitis explicabo in. Voluptatem deleniti vero quo.</p>
+                </article>
+                <article>
+                    <h4>Noticia 3</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis facere ipsum nulla, possimus placeat voluptates saepe vitae repellat debitis dolorem necessitatibus, praesentium magni minima error sint quia ratione dolore voluptatem.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer>12-04-2022</footer>
+
+</body>
+
+</html>

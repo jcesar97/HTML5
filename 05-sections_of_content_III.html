@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section of content II (section->article)</title>
+</head>
+
+<body>
+    <!-- 
+        section: es un contenedor generico que agrupa contenido quee esta relacionado
+                 Cuando creamos bloques cuyo contenido es parte de un bloque total 
+                 usaremos section.
+        article: es un contenedor que representa contenido independiente, es decir,
+                 podemos leer este fragmento en cualquier otro sitio y tendria sentido 
+                 por si mismo.
+        aside: se utiliza para representar contenido relacionado pero que no forma parte
+               del contenido principal.
+        
+        Anidamiento: un section puede contener articles, por ejemplo, si tenemos,
+                     varios articulos que hablan sobre etiquetas de HTML deben ir dentro 
+                     de un section ya que es contenido relacionado entre si, y los article 
+                     serian contenido independiente porque podriamos leer uno sin haber 
+                     leido el resto y seguiria teniendo sentido.
+                     El article es definido como un componete de la pagina de contenido 
+                     independiente, esto implica que esta etiqueta pueda tener un header 
+                     y un footer propios
+                     Tambien existe el caso en el que un article contenga varias secciones 
+                     el articulo independientes podria ser navegadores y este contener dentro 
+                     secciones como navegadores mas utilizados en 2020
+     -->
+    <header>
+        <h1>Noticias NACIONALES</h1>
+    </header>
+    <aside>Visita mi canal de Youtube... Dona btc a mi wallet</aside>
+    <main>
+        <article>
+            <h2>Navegadores mas usados en el 2020</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iste perspiciatis voluptates nam adipisci, laudantium saepe voluptatibus illo fuga? Dignissimos voluptatibus voluptas commodi illo nihil perspiciatis quidem eligendi perferendis
+                    ullam?
+                </p>
+                <footer>Creado por Google</footer>
+            </section>
+            <section>
+                <header>
+                    <h3>Firefox</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit, similique fuga eaque aperiam vitae possimus natus ipsum repellendus aspernatur sunt distinctio debitis ea porro. Id cum assumenda quidem voluptate!</p>
+                <footer>Creado por Mozilla</footer>
+            </section>
+        </article>
+    </main>
+    <footer>12-04-2022</footer>
+
+</body>
+
+</html>
